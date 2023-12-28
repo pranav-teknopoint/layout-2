@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.nav{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.nav img {
+  width: 140px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.bg {
+  position: relative;
+}
+
+.bg::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(170, 255, 199, 0.6),
+      rgba(15, 144, 183, 0.7)
+    ),
+    url("../assets/buildings.png");
+  background-repeat:repeat-x;;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22.51px;
+  padding-left: 150px;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.container-right .ballon img {
+  width: 112px;
+  height: auto;
+  padding-right: 14px;
+}
+
+.container-right .heading h1 {
+  padding-right: 26px;
+  max-width: 584px;
+  color: #f17b3b;
+  margin-top: 77.12px;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 700;
+}
+
+.container-right .car img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 77px;
+}
+
+.container-left {
+  max-width: 450px;
+  padding-top: 16px;
+  padding-bottom: 46px;
+  padding-left: 42px;
+  padding-right: 42px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 9px 40px #00000031;
+  margin-left: 56.88px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+}
+
+.container-left h1.mobile {
+  display: none;
+}
+
+.container-left h2 {
+  text-align: center;
+  color: #f17b3b;
+  font-size: 24px;
+  line-height: 29px;
+}
+.submit {
+  text-align: center;
+}
+
+.container-left input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  padding: 16px 0px 16px 10px;
+  color: #81a7a7;
+  border: 1px solid #81a7a7;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: #81a7a7;
+}
+
+.container-left label {
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 500;
+}
+
+.container-left .agree {
+  font-size: 11px;
+  line-height: 13px;
+}
+.container-left input[type="checkbox"] {
+  width: auto;
+  margin-top: 34.5px;
+  margin-bottom: 11px;
+  text-align: left;
+  accent-color: #F17B3B;
+  color: white;
+}
+
+.container-left input[type="submit"] {
+  width: 157px;
+  margin-top: 27px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f17b3b;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 40px;
+  line-height: 47px;
+  color: #1ab164;
+  font-weight: 700;
+}
+
+.key-benefits {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 880px;
+  margin: 36px auto;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.key-benefits p {
+  margin-top: 11px;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.key-benefits span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#testimonials {
+  background-image: url(../assets/gradient2.png);
+  background-position: top center;
+  background-repeat: repeat-x;
+  padding: 30px;  
+}
+
+.testimonials-head p {
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial {
+  position: relative;
+}
+
+.human {
+  position: absolute;
+  top: 17px;
+  left: 18px;
+}
+
+.quote {
+  position: absolute;
+  top: 30px;
+  left: 107px;
+}
+
+.quote p {
+  font-weight: 500;
+  padding-left: 16px;
+  color: #427779;
+}
+
+.quote h3 {
+  text-transform: uppercase;
+  color: #733a7e;
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+.testimonial-content {
+  max-width: 1050px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+#Disclaimer {  
+  max-width: 924px;
+  padding-top: 71px;
+  padding-bottom: 50px;
+  padding-left: 41px;
+  padding-right: 41px;
+  margin: 0 auto;
+}
+
+.disclaimerhead p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.disclaimercontent p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
+
+.privacypolicyhead p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.privacypolicycontent p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
+
+#footer {
+  background-color: #1db0ea;
+  width: 100%;
+  color: white;
+}
+
+#footer p {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav img {
+    width: 140px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .bg::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: url("../assets/buildings.png");
+    background-repeat:repeat-x;
+    background-position: bottom;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-right .heading h1 {
+    display: none;
+  }
+
+  .container-left {
+    margin-top: 24px;
+    padding: 0px;
+    max-width: 542px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #0000001a;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-bottom: auto;
+  }
+
+  .container-left h1.mobile {
+    display: flex;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    font-weight: 700;
+    background-color: #f17b3b;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .container-left h2 {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 24px;
+    justify-content: center;
+  }
+
+  .form {
+    padding: 23px 45px 41px 45px;
+  }
+
+  .container-left .form input,
+  select,
+  textarea {
+    margin-top: 10px;
+    padding: 16px 0px 16px 14px;
+    font-weight: 500;
+  }
+
+  .container-left input[type="checkbox"] {
+    width: auto;
+    margin-top: 27px;
+    margin-bottom: 11px;
+  }
+
+  .container-left input[type="submit"] {
+    width: 157px;
+    margin-top: 27px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f17b3b;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+  }
+
+  .container-right .ballon {
+    display: none;
+  }
+
+  .container-right .car img {
+    max-width: 150%;
+    height: auto;
+    margin-top: 77px;
+  }
+
+  .key-benefits {
+    display: block;
+    max-width: 380px;
+    margin: 25px auto;
+  }
+
+  .benefit-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px;
+  }
+
+  #testimonials {
+    padding: 15px;
+  }
+
+  .testimonials-head p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .testimonial-content {
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+
+  #Disclaimer {
+    padding: 50px 41px;
+  }
+
+  .disclaimerhead p {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+  }
+
+  .disclaimercontent p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #707070;
+  }
+
+  .privacypolicyhead p {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+  }
+
+  .privacypolicycontent p {
+    font-size: 16px;
+    line-height: 23px;
+    color: #707070;
+  }
+
+  #footer {
+    background-color: #1db0ea;
+    width: 100%;
+    color: white;
+  }
+
+  #footer p {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 600;
+    padding: 16px auto;
+  }
+}
