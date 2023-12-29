@@ -58,22 +58,41 @@
 }
 
 .wrapper {
-  display: flex;
-  width: 100%;
+  display: grid;
   max-width: 1920px;
   margin: 0 auto;
+  grid-template-areas:
+    "balloon form"
+    "heading form"
+    "car form";
+  padding: 0px 150px;
+  padding-right: 41px;
+  align-items: end;
 }
 
-.container-right {
+/* .container-right {
   display: flex;
   flex-direction: column;
   padding-top: 22.51px;
   padding-left: 150px;
   width: 50%;
   justify-content: flex-end;
+} */
+
+.ballon {
+  grid-area: balloon;
+}
+.car {
+  grid-area: car;
+  padding-right: 56px;
+  display: flex;
+  align-items: flex-end;
+}
+.heading {
+  grid-area: heading;
 }
 
-.container-right .ballon img {
+.ballon img {
   width: 112px;
   height: auto;
   padding-right: 14px;
@@ -81,12 +100,18 @@
 }
 
 @keyframes bounce {
-  0% {transform: translateY(0px);}
-  50% {transform: translateY(30px);}
-  100% {transform: translateY(0px);}
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-.container-right .heading h1 {
+.heading h1 {
   padding-right: 26px;
   max-width: 584px;
   color: #f17b3b;
@@ -95,18 +120,24 @@
   line-height: 56px;
   font-family: "Ralewaybold", sans-serif;
 }
-
-.container-right .car img {
-  max-width: 100%;
+.car img {
+  max-width: 596px;
+  width: 100%;
   height: auto;
   margin-top: 77px;
   animation: car 1.5s linear 1;
 }
 
 @keyframes car {
-  0%{transform: translateX(-500%);}
-  50%{transform: translateX(-100%);}
-  100%{transform: translateX(0%);}  
+  0% {
+    transform: translateX(-500%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .container-left {
@@ -118,9 +149,10 @@
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0px 9px 40px #00000031;
-  margin-left: 56.88px;
+  /* margin-left: 56.88px; */
   margin-bottom: 40px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  grid-area: form;
 }
 
 .container-left h1.mobile {
@@ -131,7 +163,7 @@
   text-align: center;
   color: #f17b3b;
   font-size: 24px;
-  line-height: 29px;  
+  line-height: 29px;
   font-family: "Ralewaybold", sans-serif;
 }
 .submit {
@@ -295,7 +327,7 @@ textarea {
 .disclaimercontent p {
   font-size: 14px;
   line-height: 20px;
-  color: #707070;  
+  color: #707070;
   font-family: "Ralewayregular", sans-serif;
 }
 
@@ -308,7 +340,7 @@ textarea {
 .privacypolicycontent p {
   font-size: 14px;
   line-height: 20px;
-  color: #707070;  
+  color: #707070;
   font-family: "Ralewayregular", sans-serif;
 }
 
@@ -357,29 +389,16 @@ textarea {
   }
 
   .wrapper {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    grid-template-areas:
+      "heading"
+      "form"
+      "ballon"
+      "car";
+    padding: 0px 41px;
+    align-items: end;
   }
 
-  .container-right .heading h1 {
-    display: none;
-  }
-
-  .container-left {
-    margin-top: 24px;
-    padding: 0px;
-    max-width: 542px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 5px 20px #0000001a;
-    margin-left: 52px;
-    margin-right: 52px;
-    margin-bottom: auto;
-  }
-
-  .container-left h1.mobile {
-    display: flex;
+  .heading h1 {
     font-size: 25px;
     line-height: 30px;
     color: white;
@@ -390,6 +409,28 @@ textarea {
     padding: 12px;
     text-align: center;
   }
+
+  .container-left {
+    padding: 0px;
+    max-width: 542px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px #0000001a;
+    margin-bottom: auto;
+  }
+
+  /* .container-left h1.mobile {
+    display: flex;
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    font-family: "Ralewaybold", sans-serif;
+    background-color: #f17b3b;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 12px;
+    text-align: center;
+  } */
 
   .container-left h2 {
     font-size: 22px;
@@ -429,12 +470,11 @@ textarea {
     font-family: "Ralewaybold", sans-serif;
     line-height: 15px;
   }
-
-  .container-right .ballon {
+  .ballon {
     display: none;
   }
 
-  .container-right .car img {
+  .car img {
     max-width: 150%;
     height: auto;
     margin-top: 77px;
@@ -506,5 +546,6 @@ textarea {
     line-height: 36px;
     font-family: "Ralewayregular", sans-serif;
     padding: 16px auto;
+    text-align: center;
   }
 }

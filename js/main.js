@@ -73,11 +73,9 @@ $(document).ready(function () {
     initSlick();
   }
   const mediaQuery = window.matchMedia("(max-width: 767px)");
-  mediaQuery.addEventListener(function () {
     if (mediaQuery.matches) {
       initSlick();
     } else {
       destroySlick();
     }
-  });
 });
